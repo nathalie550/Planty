@@ -41,54 +41,8 @@ p {
 
 /*HEADER*/
 
-/* Nav bar*/
-#site-header>div {
-    height: 80px;
-    z-index: 10;
-    top: 0;
-    background-color: var(--white);
-    display: flex;
-    margin-right: 0px;
-}
 
-/*Logo*/
-#site-header>div>div.header-titles-wrapper>div>div>a>img {
-    width: 201px;
-    height: 19px;
-}
-
-/*Nous rencontrer*/
-#menu-item-36>a {
-    color: #000;
-    font-family: Syne;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 700;
-    padding: 30px;
-    text-decoration: none;
-}
-
-/*Commander*/
-#menu-item-1087>a {
-    color: #FFF;
-    text-align: center;
-    font-family: Syne;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    background-color: var(--rect-commander);
-    width: 236px;
-    height: 80px;
-    padding: 30px;
-    text-decoration: none;
-}
-
-/*Commander hover*/
-#menu-item-1087>a:hover {
-    color: var(--white);
-    background-color: var(--rect-commander);
-    text-decoration: none;
-}
+  
 
 
 /* PAGE HOME*/
