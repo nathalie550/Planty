@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
-
-
     <?php
 
     /**
@@ -31,71 +29,76 @@
 
         <section class="container">
             <div class="card-fruits">
-                <img src="<?= get_stylesheet_directory_uri() . "/images/Fraise-texte.png" ?>">
-                <img src="<?= get_stylesheet_directory_uri() . "/images/Pamplemousse-texte.png" ?>">
-                <img src="<?= get_stylesheet_directory_uri() . "/images/Framboise-texte.png" ?>">
-                <img src="<?= get_stylesheet_directory_uri() . "/images/Citron-texte.png" ?>">
+                <div class="card-fruits_item">
+                    <img src="<?= get_stylesheet_directory_uri() . "/images/Fraise-texte.png" ?>">
+                    <div class="boutons">
+                        <input type="button" value="0">
+                        <div class="bouton-chiffres">
+                            <input type="button1" value="+">
+                            <input type="button2" value="-">
+                        </div>
+                        <div class="ok">
+                            <input class="bouton-ok" type="button" value="OK">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-fruits_item">
+                    <img src="<?= get_stylesheet_directory_uri() . "/images/Pamplemousse-texte.png" ?>">
+                    <div class="boutons">
+                        <input type="button" value="0">
+                        <div class="bouton-chiffres">
+                            <input type="button1" value="+">
+                            <input type="button2" value="-">
+                        </div>
+                        <div class="ok">
+                            <input class="bouton-ok" type="button" value="OK">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card-fruits_item">
+                    <img src="<?= get_stylesheet_directory_uri() . "/images/Framboise-texte.png" ?>">
+                    <div class="boutons">
+                        <input type="button" value="0">
+                        <div class="bouton-chiffres">
+                            <input type="button1" value="+">
+                            <input type="button2" value="-">
+                        </div>
+                        <div class="ok">
+                            <input class="bouton-ok" type="button" value="OK">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-fruits_item">
+                    <img src="<?= get_stylesheet_directory_uri() . "/images/Citron-texte.png" ?>">
+                    <div class="boutons">
+                        <input type="button" value="0">
+                        <div class="bouton-chiffres">
+                            <input type="button1" value="+">
+                            <input type="button2" value="-">
+                        </div>
+                        <div class="ok">
+                            <input class="bouton-ok" type="button" value="OK">
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div>
 
 
         </section>
-        <section class="container2">
 
-            <div class="boutons">
-                <input type="button" value="0">
-                <div class="bouton-chiffres">
-                    <input type="button1" value="+">
-                    <input type="button2" value="-">
-                </div>
-                <div class="ok">
-                    <input class="bouton-ok" type="button" value="OK">
-                </div>
-            </div>
 
-            <div class="boutons">
-                <input type="button" value="0">
-                <div class="bouton-chiffres">
-                    <input type="button1" value="+">
-                    <input type="button2" value="-">
-                </div>
-                <div class="ok">
-                    <input class="bouton-ok" type="button" value="OK">
-                </div>
-            </div>
-
-            <div class="boutons">
-                <input type="button" value="0">
-                <div class="bouton-chiffres">
-                    <input type="button1" value="+">
-                    <input type="button2" value="-">
-                </div>
-                <div class="ok">
-                    <input class="bouton-ok" type="button" value="OK">
-                </div>
-            </div>
-
-            <div class="boutons">
-                <input type="button" value="0">
-                <div class="bouton-chiffres">
-                    <input type="button1" value="+">
-                    <input type="button2" value="-">
-                </div>
-                <div class="ok">
-                    <input class="bouton-ok" type="button" value="OK">
-                </div>
-            </div>
-        </section>
+        <div class="divider3"></div>
 
 
         <?php get_template_part('templates/template-formulaire'); ?>
 
         </section>
 
-
-
-        <div class="bouton-commander">
-            <p><input type="submit" value="Commander"></p>
-        </div>
 
     </main><!-- #site-content -->
 
