@@ -87,7 +87,7 @@ section {
 }
 
 /*Bouton commander*/
-.primary-menu-wrapper .menu-item>a:last-child(3) {
+.primary-menu-wrapper .primary-menu>li:nth-child(2)>a {
     color: var(--white);
     text-align: center;
     font-family: Syne;
@@ -95,7 +95,6 @@ section {
     font-style: normal;
     font-weight: 700;
 }
-
 
 
 
@@ -116,12 +115,25 @@ section {
     margin-top: 0px;
 }
 
-/* Séparateur*/
+/* Séparateurs*/
 .divider {
     max-width: 860px;
     border: 1px solid white;
-    margin-left: 210px;
     margin-top: 40px;
+    margin-left: 210px;
+}
+
+.divider1 {
+    max-width: 860px;
+    border: 1px solid white;
+    margin-top: 40px;
+}
+
+.divider3 {
+    width: 80%;
+    margin-left: 210px;
+    border: 1px solid white;
+    margin-top: 120px;
 }
 
 /* Titre commande*/
@@ -130,21 +142,27 @@ section {
     font-family: Syne;
     font-size: 30px;
     font-weight: 700;
-    margin-left: 220px;
+    margin-left: 210px;
 }
 
 /*section class container*/
 .container {
-    margin-left: 210px;
-    height: 128.355px;
-    display: flex;
+    min-height: 128.355px;
+    max-width: 1440px;
+    padding-left: 210px;
+    padding-right: 10px;
 }
+
 
 /*Card fruits*/
 .card-fruits {
     height: 128.355px;
     display: flex;
-    gap: 26px;
+    gap: inherit;
+}
+
+.card-fruits_item {
+    width: 100%;
 }
 
 /*Card fruits img*/
@@ -153,21 +171,11 @@ section {
     height: 128.355px;
 }
 
-/*section class container2*/
-.container2 {
-    width: 860px;
-    height: 56px;
-    display: flex;
-    margin-left: 210px;
-    padding-top: 0px;
-    margin-top: 25px;
-    gap: 20px;
-}
-
 /* Boutons */
 .boutons {
     display: flex;
     height: 56px;
+    margin-top: 14px;
 }
 
 /* Boutons 0 */
@@ -233,13 +241,14 @@ section {
 .code {
     display: flex;
     padding-top: 0px;
+    margin-left: 212px;
 }
 
 /*Div class informations*/
 .informations {
-    max-width: 438px;
+    width: 438px;
     height: 400px;
-    margin-left: 220px;
+    margin-left: 10px;
 }
 
 /*Titre vos informations et livraison*/
@@ -258,7 +267,7 @@ section {
     margin-top: 13px;
     margin-bottom: 30px;
     border-radius: 7px;
-    max-width: 383px;
+    width: 383px;
     height: 71px;
     padding-top: 29px;
 }
@@ -282,7 +291,6 @@ section {
 .divider2 {
     height: 447px;
     border: 1px solid white;
-    margin-left: 45px;
     margin-right: 44px;
     margin-top: 60px;
 }
@@ -313,18 +321,6 @@ section {
 .bouton-commander p input:hover {
     text-decoration: none;
 }
-
-
-
-/* PAGE SE RENCONTRER FORMULAIRE WP FORM TITRE ET BOUTON */
-.pp-wpforms-heading {
-    margin-left: 80px;
-}
-
-.wpforms-container .wpforms-submit-container {
-    margin-left: 80px;
-}
-
 
 
 
@@ -359,65 +355,190 @@ section {
 
 
 
-/*RESPONSIVE*/
-/*Pour tous les appareils équipés d'écrans et dont la taille est > à 700px*/
+/*RESPONSIVE TELEPHONE*/
 
-@media screen and (max-width:700px) {
+@media(max-width: 768px) {
+
     #template {
-        display: block;
+        margin-left: 0rem;
     }
 
-    #template h3,
-    #template h4 {
-        font-size: 20px;
-        margin: auto;
-        margin-left: 40px;
+    .site-logo img {
+        width: 50%;
+    }
+
+    #template h3 {
+        font-size: 2rem;
+        text-align: start;
+        margin-left: 5rem;
     }
 
     .divider {
-        visibility: hidden;
-        margin: auto;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        max-width: 280px;
+        width: 70%;
+        margin-left: 3rem;
+        border: 1px solid white;
     }
 
-    .container,
+    .divider3 {
+        width: 70%;
+        margin-left: 4rem;
+        border: 1px solid white;
+        margin-top: 780px;
+    }
+
+    #template h4 {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .container {
+        padding-left: 4rem;
+        width: 100%;
+    }
+
     .card-fruits {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 500px;
-        margin-left: 50px;
+        gap: 1rem;
+        margin-left: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .card-fruits_item {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .card-fruits img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boutons {
+        width: 40%;
+        margin-top: 10px;
     }
 
     .code,
-    .informations,
-    .livraison {
+    .informations {
         flex-direction: column;
-        display: flex;
-        margin-left: 40px;
-        margin-top: 120px;
-        width: 80%;
+        width: 89%;
+        margin-left: 2rem;
+        height: 50%;
     }
 
-    .container2 {
-        flex-direction: column;
-        display: flex;
-        margin: 0px;
-        margin-left: 90px;
+    .livraison {
+        width: 90%;
+        margin-left: 0.5rem;
+    }
+
+    .informations h4,
+    .livraison h4 {
+        font-size: 2.5rem;
     }
 
     .divider2 {
-        visibility: hidden;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        height: 2px;
+        margin-top: 2rem;
+        height: 0rem;
+        margin-left: 3rem;
+        width: 70%;
     }
 
     .bouton-commander {
-        align-items: center;
+        margin-left: 8rem;
+        margin-top: 1rem;
+    }
+
+    .wpcf7 label {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+/*RESPONSIVE TABLETTE*/
+@media(min-width: 768px) and (max-width: 979px) {
+
+    #template {
+        margin-left: 0rem;
+    }
+
+    .site-logo img {
+        width: 50%;
+    }
+
+    #template h3 {
+        font-size: 4rem;
+    }
+
+    .divider {
+        width: 80%;
+        margin-left: 8rem;
+        border: 1px solid white;
+    }
+
+    .divider3 {
+        width: 80%;
+        margin-left: 8rem;
+        border: 1px solid white;
+    }
+
+    #template h4 {
+        margin-left: 1rem;
+        font-size: 3.5rem;
+    }
+
+    .container {
+        padding-left: 2rem;
+    }
+
+    .card-fruits_item {
+        padding-bottom: 20px;
+    }
+
+    .card-fruits img {
+        width: 80%;
+        height: auto;
+        margin-right: 6rem;
+    }
+
+    .boutons {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .ok .bouton-ok:nth-child(1) {
+        width: 90%;
+    }
+
+    .code,
+    .informations {
         flex-direction: column;
-        margin-left: 110px;
+        width: 90%;
+        margin-left: 0rem;
+        height: 50%;
+        padding-left: 12rem;
+    }
+
+    .livraison {
+        width: 90%;
+        padding-left: 12rem;
+    }
+
+    .informations h4,
+    .livraison h4 {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .divider2 {
+        margin-top: 2rem;
+        height: 0rem;
+        width: 60%;
+    }
+
+    .bouton-commander {
+        margin-left: 32rem;
+        margin-top: 1rem;
     }
 
 }
