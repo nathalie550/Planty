@@ -92,10 +92,10 @@
         </section>
 
 
-        <div class="divider3"></div>
+        <div class="divider"></div>
 
 
-        <?php get_template_part('templates/template-formulaire'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="e53fc3b" title="Livraison"]'); ?>
 
         </section>
 
