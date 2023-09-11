@@ -1,0 +1,544 @@
+/*
+Theme Name: planty-enfant
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Description: Boisson énergissante 100% naturelle
+Author: Nathalie
+Author URI: https://wordpress.org/
+Template: twentytwenty
+Version:  2.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Planty-enfant
+*/
+
+:root {
+    --vieux-rose: #E0B9B4;
+    --rouge: #C02E44;
+    --vert-foncé: #326238;
+    --violet: #7B61FF;
+    --white: #FFFFFF;
+    --vert: #3D9448;
+    --black: #000000;
+    --écriture-rose: #D2776A;
+    --titre-vert: #3B8E46;
+    --coeur-de-nénuphar: #D44056;
+    --rect-commander: #DC9F96;
+    --background: #E5E5E5;
+    --background-two: #E3D9D0#E3D9D0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet');
+
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+    font-family: 'Syne', sans-serif;
+}
+
+p {
+    font-family: 'Syne', sans-serif;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+
+
+
+/*HEADER*/
+/*Section header*/
+#site-header.sticky-top {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+}
+
+.section-inner {
+    padding: 0px;
+}
+
+/* Marge à droite du cadre rose commander */
+.header-navigation-wrapper {
+    margin-right: -52px;
+}
+
+/*Logo*/
+.site-logo img {
+    width: 201px;
+    height: 19px;
+}
+
+/*Menu item*/
+.primary-menu-wrapper .primary-menu .menu-item>a {
+    color: var(--black);
+    font-family: Syne;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 30px;
+    text-decoration: none;
+    order: 1
+}
+
+/*Bouton commander*/
+.primary-menu-wrapper .primary-menu>li:nth-child(2) {
+    background-color: var(--rect-commander);
+    order: 3;
+}
+
+/*Bouton commander*/
+.primary-menu-wrapper .primary-menu>li:nth-child(2)>a {
+    color: var(--white);
+    text-align: center;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+
+/* TEMPLATE COMMANDER */
+#template {
+    background: #3B8E46;
+}
+
+#template>h3 {
+    color: var(--white);
+    font-family: Syne;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 49px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Séparateurs*/
+.divider {
+    max-width: 860px;
+    border: 1px solid white;
+    margin-top: 40px;
+    margin-left: 210px;
+}
+
+.divider1 {
+    max-width: 860px;
+    border: 1px solid white;
+    margin-top: 40px;
+}
+
+.divider3 {
+    width: 80%;
+    margin-left: 210px;
+    border: 1px solid white;
+    margin-top: 120px;
+}
+
+/* Titre commande*/
+#template>h4 {
+    color: var(--white);
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 210px;
+}
+
+/*section class container*/
+.container {
+    min-height: 128.355px;
+    max-width: 1440px;
+    padding-left: 210px;
+    padding-right: 10px;
+}
+
+
+/*Card fruits*/
+.card-fruits {
+    height: 128.355px;
+    display: flex;
+    gap: inherit;
+}
+
+.card-fruits_item {
+    width: 100%;
+}
+
+/*Card fruits img*/
+.card-fruits img {
+    max-width: 192.533px;
+    height: 128.355px;
+}
+
+/* Boutons */
+.boutons {
+    display: flex;
+    height: 56px;
+    margin-top: 14px;
+}
+
+/* Boutons 0 */
+.boutons input:nth-child(1) {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    background-color: var(--white);
+}
+
+.boutons input:hover {
+    text-decoration: none;
+}
+
+/*div class="bouton-chiffres"*/
+.bouton-chiffres {
+    display: flex;
+    flex-direction: column;
+    margin-right: 11px;
+}
+
+/*Bouton +*/
+.bouton-chiffres input:nth-child(1) {
+    background-color: #DC9F96;
+    max-width: 31px;
+    height: 28px;
+    color: #FFFF;
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Bouton -*/
+.bouton-chiffres input:nth-child(2) {
+    background-color: #DC9F96;
+    max-width: 31px;
+    height: 28px;
+    color: #FFF;
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*Bouton OK*/
+.ok .bouton-ok:nth-child(1) {
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    color: var(--white);
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100px;
+    height: 56px;
+}
+
+/* FORMULAIRE VOS INFORMATIONS ET LIVRAISON */
+
+/*Section code*/
+.code {
+    display: flex;
+    padding-top: 0px;
+    margin-left: 212px;
+}
+
+/*Div class informations*/
+.informations {
+    width: 438px;
+    height: 400px;
+    margin-left: 10px;
+}
+
+/*Titre vos informations et livraison*/
+.informations h4,
+.livraison h4 {
+    color: var(--white);
+    font-family: Syne;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 53px;
+}
+
+/* Cadres des formulaires */
+.wpcf7-form-control-wrap input {
+    margin-top: 13px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    width: 383px;
+    height: 71px;
+    padding-top: 29px;
+}
+
+/*Label vos informations et livraison*/
+.wpcf7 label {
+    color: var(--white);
+    font-family: Syne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Div class livraison*/
+.livraison {
+    max-width: 438px;
+}
+
+/* Séparateur entre div vos informations et div livraison*/
+.divider2 {
+    height: 447px;
+    border: 1px solid white;
+    margin-right: 44px;
+    margin-top: 60px;
+}
+
+/* Bouton commander*/
+.bouton-commander {
+    border-radius: 5px;
+    margin-left: 590px;
+    max-width: 198px;
+    height: 55px;
+    color: var(--white);
+    margin-top: 44px;
+    padding-bottom: 153px;
+}
+
+.bouton-commander p input {
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    max-width: 198px;
+    height: 55px;
+    background-color: #E0B9B4;
+    color: var(--white);
+}
+
+.bouton-commander p input:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* FOOTER */
+/* Section Footer*/
+#site-footer {
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Lien Mentions légales */
+#site-footer a {
+    text-decoration: none !important;
+    color: var(--black);
+}
+
+.footer-top-visible .footer-nav-widgets-wrapper,
+.footer-top-hidden #site-footer {
+    margin-top: 0rem;
+}
+
+/* Section modifier en bas du footer */
+.post-meta-wrapper {
+    margin-top: 0px;
+    visibility: hidden;
+    height: 0px;
+}
+
+
+
+
+/*RESPONSIVE TELEPHONE*/
+
+@media(max-width: 768px) {
+
+    #template {
+        margin-left: 0rem;
+    }
+
+    .site-logo img {
+        width: 50%;
+    }
+
+    #template h3 {
+        font-size: 2rem;
+        text-align: start;
+        margin-left: 5rem;
+    }
+
+    .divider {
+        width: 70%;
+        margin-left: 3rem;
+        border: 1px solid white;
+    }
+
+    .divider3 {
+        width: 70%;
+        margin-left: 4rem;
+        border: 1px solid white;
+        margin-top: 780px;
+    }
+
+    #template h4 {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .container {
+        padding-left: 4rem;
+        width: 100%;
+    }
+
+    .card-fruits {
+        gap: 1rem;
+        margin-left: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .card-fruits_item {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .card-fruits img {
+        width: 100%;
+        height: auto;
+    }
+
+    .boutons {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .code,
+    .informations {
+        flex-direction: column;
+        width: 89%;
+        margin-left: 2rem;
+        height: 50%;
+    }
+
+    .livraison {
+        width: 90%;
+        margin-left: 0.5rem;
+    }
+
+    .informations h4,
+    .livraison h4 {
+        font-size: 2.5rem;
+    }
+
+    .divider2 {
+        margin-top: 2rem;
+        height: 0rem;
+        margin-left: 3rem;
+        width: 70%;
+    }
+
+    .bouton-commander {
+        margin-left: 8rem;
+        margin-top: 1rem;
+    }
+
+    .wpcf7 label {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+/*RESPONSIVE TABLETTE*/
+@media(min-width: 768px) and (max-width: 979px) {
+
+    #template {
+        margin-left: 0rem;
+    }
+
+    .site-logo img {
+        width: 50%;
+    }
+
+    #template h3 {
+        font-size: 4rem;
+    }
+
+    .divider {
+        width: 80%;
+        margin-left: 8rem;
+        border: 1px solid white;
+    }
+
+    .divider3 {
+        width: 80%;
+        margin-left: 8rem;
+        border: 1px solid white;
+    }
+
+    #template h4 {
+        margin-left: 1rem;
+        font-size: 3.5rem;
+    }
+
+    .container {
+        padding-left: 2rem;
+    }
+
+    .card-fruits_item {
+        padding-bottom: 20px;
+    }
+
+    .card-fruits img {
+        width: 80%;
+        height: auto;
+        margin-right: 6rem;
+    }
+
+    .boutons {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .ok .bouton-ok:nth-child(1) {
+        width: 90%;
+    }
+
+    .code,
+    .informations {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 0rem;
+        height: 50%;
+        padding-left: 12rem;
+    }
+
+    .livraison {
+        width: 90%;
+        padding-left: 12rem;
+    }
+
+    .informations h4,
+    .livraison h4 {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .divider2 {
+        margin-top: 2rem;
+        height: 0rem;
+        width: 60%;
+    }
+
+    .bouton-commander {
+        margin-left: 32rem;
+        margin-top: 1rem;
+    }
+
+}

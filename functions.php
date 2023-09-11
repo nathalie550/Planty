@@ -32,21 +32,19 @@ function theme_enqueue_styles()
 {
     // Chargement du style.css du thème parent Twenty Twenty
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-    // Chargement du css/theme.css pour nos personnalisations
-    wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 }
 
 
 // Action qui permet d afficher un menu Admin si on est connecté
-add_filter('wp_nav_menu_items', 'add_admin_link', 11, 3);
 
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 
 function add_admin_link($items, $args)
 {
 
-    if (is_user_logged_in() && $args->theme_location === 'Entête de mon menu') {
+    if (is_user_logged_in() && $args->theme_location === 'primary') {
 
-        $items .= '<li><a href="http://localhost:8888/Planty/admi/' . get_admin_url() . '">Admin</a></li>';
+        $items .= '<li class="menu-item"><a href="' . get_admin_url() . '">Admin</a></li>';
     }
 
     return $items;
