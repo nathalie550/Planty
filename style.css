@@ -120,21 +120,10 @@ section {
     max-width: 860px;
     border: 1px solid white;
     margin-top: 40px;
-    margin-left: 210px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.divider1 {
-    max-width: 860px;
-    border: 1px solid white;
-    margin-top: 40px;
-}
-
-.divider3 {
-    width: 80%;
-    margin-left: 210px;
-    border: 1px solid white;
-    margin-top: 120px;
-}
 
 /* Titre commande*/
 #template>h4 {
@@ -150,13 +139,12 @@ section {
     min-height: 128.355px;
     max-width: 1440px;
     padding-left: 210px;
-    padding-right: 10px;
+    padding-right: 140px;
 }
 
 
 /*Card fruits*/
 .card-fruits {
-    height: 128.355px;
     display: flex;
     gap: inherit;
 }
@@ -241,7 +229,7 @@ section {
 .code {
     display: flex;
     padding-top: 0px;
-    margin-left: 212px;
+    margin-left: 210px;
 }
 
 /*Div class informations*/
@@ -289,6 +277,7 @@ section {
 
 /* Séparateur entre div vos informations et div livraison*/
 .divider2 {
+    max-width: 860px;
     height: 447px;
     border: 1px solid white;
     margin-right: 44px;
@@ -298,7 +287,7 @@ section {
 /* Bouton commander*/
 .bouton-commander {
     border-radius: 5px;
-    margin-left: 590px;
+    margin-left: 600px;
     max-width: 198px;
     height: 55px;
     color: var(--white);
@@ -355,7 +344,7 @@ section {
 
 
 
-/*RESPONSIVE TELEPHONE*/
+/*RESPONSIVE TELEPHONE template commander*/
 
 @media(max-width: 768px) {
 
@@ -370,20 +359,13 @@ section {
     #template h3 {
         font-size: 2rem;
         text-align: start;
-        margin-left: 5rem;
+        margin-left: 4rem;
     }
 
     .divider {
         width: 70%;
-        margin-left: 3rem;
+        margin-left: 5rem;
         border: 1px solid white;
-    }
-
-    .divider3 {
-        width: 70%;
-        margin-left: 4rem;
-        border: 1px solid white;
-        margin-top: 780px;
     }
 
     #template h4 {
@@ -392,13 +374,12 @@ section {
     }
 
     .container {
-        padding-left: 4rem;
+        padding-left: 6rem;
         width: 100%;
     }
 
     .card-fruits {
         gap: 1rem;
-        margin-left: 1rem;
         flex-wrap: wrap;
     }
 
@@ -408,26 +389,27 @@ section {
     }
 
     .card-fruits img {
-        width: 100%;
         height: auto;
+        margin-left: 1rem;
     }
 
     .boutons {
         width: 40%;
         margin-top: 10px;
+        margin-left: 1rem;
     }
 
     .code,
     .informations {
         flex-direction: column;
         width: 89%;
-        margin-left: 2rem;
+        margin-left: 1.3rem;
         height: 50%;
     }
 
     .livraison {
         width: 90%;
-        margin-left: 0.5rem;
+        margin-left: 1.3rem;
     }
 
     .informations h4,
@@ -439,11 +421,11 @@ section {
         margin-top: 2rem;
         height: 0rem;
         margin-left: 3rem;
-        width: 70%;
+        width: 80%;
     }
 
     .bouton-commander {
-        margin-left: 8rem;
+        margin-left: 9rem;
         margin-top: 1rem;
     }
 
@@ -453,9 +435,7 @@ section {
 }
 
 
-
-
-/*RESPONSIVE TABLETTE*/
+/*RESPONSIVE TABLETTE template commander*/
 @media(min-width: 768px) and (max-width: 979px) {
 
     #template {
@@ -467,18 +447,12 @@ section {
     }
 
     #template h3 {
-        font-size: 4rem;
+        text-align: start;
+        padding-left: 16rem;
     }
 
     .divider {
-        width: 80%;
-        margin-left: 8rem;
-        border: 1px solid white;
-    }
-
-    .divider3 {
-        width: 80%;
-        margin-left: 8rem;
+        width: 70%;
         border: 1px solid white;
     }
 
@@ -488,7 +462,7 @@ section {
     }
 
     .container {
-        padding-left: 2rem;
+        padding-left: 7rem;
     }
 
     .card-fruits_item {
@@ -496,7 +470,7 @@ section {
     }
 
     .card-fruits img {
-        width: 80%;
+        width: 90%;
         height: auto;
         margin-right: 6rem;
     }
@@ -516,12 +490,12 @@ section {
         width: 90%;
         margin-left: 0rem;
         height: 50%;
-        padding-left: 12rem;
+        padding-left: 5rem;
     }
 
     .livraison {
         width: 90%;
-        padding-left: 12rem;
+        padding-left: 5rem;
     }
 
     .informations h4,
@@ -533,11 +507,11 @@ section {
     .divider2 {
         margin-top: 2rem;
         height: 0rem;
-        width: 60%;
+        margin-left: 6rem;
     }
 
     .bouton-commander {
-        margin-left: 32rem;
+        margin-left: 22rem;
         margin-top: 1rem;
     }
 
